@@ -58,7 +58,14 @@ class Artist
   #this method prints out an array of song names
   #by accessing the name attribute of each song
   def songs
-    @songs 
+    list = []
+    Song.all.each do |song|
+      if song.artist == self 
+        list << song 
+      else 
+      end 
+    end 
+    list 
   end
 
 end
