@@ -58,7 +58,7 @@ class Artist
   #this method prints out an array of song names
   #by accessing the name attribute of each song
   def songs
-    puts @songs.collect {|x| x.name}
+    puts @songs.collect {|x| x.self}
   end
 
 end
