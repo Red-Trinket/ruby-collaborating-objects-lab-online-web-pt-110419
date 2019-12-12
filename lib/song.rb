@@ -18,7 +18,7 @@ class Song
     song = Song.new(song_info[1])
     song.artist_name = song_info[0]
     song
-    Artist.all.chomp 
+    Artist.all.
   end
 
   def self.new_by_filenam(file)
