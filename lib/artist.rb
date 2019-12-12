@@ -69,6 +69,12 @@ class Artist
   end
   
   def print_songs
+    Song.all.each do |song|
+      if song.artist == self 
+        puts song 
+      else 
+      end
+    end
   end 
 
 end
