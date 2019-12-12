@@ -25,4 +25,15 @@ class Artist
     
   end 
   
+  def songs(artist)
+    list = []
+    Songs.all.each do |song|
+      if song.artist == self 
+        list << song 
+      end
+    end 
+    list 
+  end 
+        
+  
 end 
