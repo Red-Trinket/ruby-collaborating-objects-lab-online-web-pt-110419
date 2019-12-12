@@ -34,6 +34,13 @@ class Artist
     end 
     list 
   end 
+  
+  def add_song(song)
+    
+    Song.all << song 
+    song.artist == self 
+    
+  end 
         
   
 end 
