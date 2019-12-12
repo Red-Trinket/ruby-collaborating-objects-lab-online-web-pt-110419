@@ -67,5 +67,8 @@ class Artist
     end 
     list 
   end
+  
+  def print_songs
+  end 
 
 end
