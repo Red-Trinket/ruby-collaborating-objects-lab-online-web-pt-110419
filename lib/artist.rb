@@ -40,6 +40,7 @@ class Artist
     Song.all << song 
     @@all << song 
     song.artist == self 
+    @@all 
     
   end 
         
