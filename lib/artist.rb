@@ -25,7 +25,8 @@ class Artist
     #the song class then calls this method #add_song
     #this method adds the song to the artist instances song array
     #every artist instance has this array
-    @songs << song
+    @songs << song 
+    Song.all << song 
   end
 
   def self.find_or_create_by_name(name)
