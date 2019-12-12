@@ -25,6 +25,7 @@ class Artist
     #the song class then calls this method #add_song
     #this method adds the song to the artist instances song array
     #every artist instance has this array
+    song.artist = self 
     @songs << song 
     Song.all << song 
   end
