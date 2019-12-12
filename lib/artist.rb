@@ -27,7 +27,7 @@ class Artist
   
   def songs
     list = []
-    @@all.each do |song|
+    Song.all.each do |song|
       if song.artist == self 
         list << song 
       end
