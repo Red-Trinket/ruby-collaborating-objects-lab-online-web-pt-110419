@@ -25,7 +25,7 @@ class Artist
     
   end 
   
-  def songs(artist)
+  def songs
     list = []
     Songs.all.each do |song|
       if song.artist == self 
