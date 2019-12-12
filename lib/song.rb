@@ -20,7 +20,7 @@ class Song
     #this is calling the #artist_name=
     #it is a writer method that assigns that variable to artist
     #you are not just assigning the string to artist, because you want the artist attribute to be an artist instance instead
-    artist = artist_name
+    artist = Artist.find_or_create_by_name(artist_name)
     artist.add_song(song)
     song
   end
