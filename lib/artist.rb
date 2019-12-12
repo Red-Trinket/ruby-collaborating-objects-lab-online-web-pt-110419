@@ -27,7 +27,7 @@ class Artist
   
   def songs
     list = []
-    Song.all.each do |song|
+    @all.each do |song|
       if song.artist == self 
         list << song 
       end
@@ -40,7 +40,6 @@ class Artist
     Song.all << song 
     @@all << song 
     song.artist == self 
-    @@all 
     
   end 
         
